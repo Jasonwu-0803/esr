@@ -1,6 +1,5 @@
 *.pyc
 *.pkl
 *.xml
-*.txt
 
 /experiment/**/model/

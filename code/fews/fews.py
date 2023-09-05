@@ -79,6 +79,7 @@ def preprocess(sense_file):
     definition_dict = {}
     example_dict = {}
     sense_id = None; word = None; word_pos = None
+    print(sense_file)
     with open(sense_file, 'r') as file:
         for line in tqdm(file.readlines()):
             line = line.strip()

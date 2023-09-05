@@ -2,7 +2,7 @@
 
 . $(dirname $BASH_SOURCE)/../../../../../script/esr/base.sh
 
-device=0
+device=3
 transformer=roberta-base
 dataset=dataset_fews
 seed=42
@@ -18,5 +18,5 @@ test_args='
 --per_device_eval_batch_size 32
 '
 
-$script/train_f.sh $device $transformer $dataset $seed "$prefix" "$train_args"
+#$script/train_f.sh $device $transformer $dataset $seed "$prefix" "$train_args"
 $script/test_f.sh $device $transformer $dataset $seed "$prefix" "$train_args" "$test_args"
